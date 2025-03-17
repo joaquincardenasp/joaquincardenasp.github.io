@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+    </header>
+    <main class="main-content">
+        <h1> About Me </h1>
+        <p class="summary"> My name is Joaquin Cardenas, I am a 4th year student at Universidad de los Andes. I am currently studying Computer Science and I am passionate about programming.
+            I graduated from a bilingual high school, which allowed me to develop native level skills in both English and Spanish. I look forward to keep learning on this field to become a professional in the future.
+        </p>
+        <p class="major">Major: Computer Science</p>
+        <p class="enrollment-year">Year of University Enrollment: 2022</p>
+        <p class="github">GitHub: <a href="https://github.com/joaquincardenasp">Link to my GitHub</a></p>
+        
+        
+        <section class="skills-section">
+            <h2>Skills</h2>
+            <table class="skills-table">
+                <tr>
+                    <th>Skill</th>
+                    <th>Level</th>
+                </tr>
+                <tr>
+                    <td>English</td>
+                    <td class="expert">Expert</td>
+                </tr>
+                <tr>
+                    <td>Python</td>
+                    <td class="advanced">Advanced</td>
+                </tr>
+                <tr>
+                    <td>SQL</td>
+                    <td class="advanced">Advanced</td>
+                </tr>
+                <tr>
+                    <td>JavaScript</td>
+                    <td class="basic">Basic</td>
+                </tr>
+                <tr>
+                    <td>HTML/CSS</td>
+                    <td class="basic">Basic</td>
+                </tr>
+                <tr>
+                    <td>Git</td>
+                    <td class="basic">Basic</td>
+                </tr>
+                
+                <tr>
+                    <td>Ruby</td>
+                    <td class="basic">Basic</td>
+                </tr>
+                
+                <tr>
+                    <td>Spanish</td>
+                    <td>Native</td>
+                </tr>
+            </table>
+        </section>
+
+        <section class="input-section">
+            <input type="text" id="userInput" placeholder="Enter new text here">
+            <button id="changeTextButton">Change Text</button>
+            <p id="textToChange">This text will change when you press the button.</p>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>&copy; 2023 Joaquin Cardenas</p>
+    </footer>
+
+    <script>
+        document.getElementById('changeTextButton').addEventListener('click', function() {
+            var userInput = document.getElementById('userInput').value;
+            document.getElementById('textToChange').innerText = userInput;
+        });
+    </script>
+</body>
+</html>
